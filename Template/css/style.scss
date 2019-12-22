@@ -1,0 +1,198 @@
+@mixin base-holder {
+  // border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@mixin base-content {
+  // border: 1px solid black;
+  max-width: 1224px;
+}
+
+.app {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .app-header-base {
+    @include base-holder();
+    .app-header {
+      @include base-content();
+      width: 100%;
+      height: 120px;
+      .breadcrumbs {
+      padding-top: 30px;
+      color: gray;
+      font-size: 0.7em;
+        ::after {
+          content: "";
+          position: relative;
+          background-position: center;
+          background-repeat: no-repeat;
+          padding-left: 15px;
+          background-image: url("../images/svg/arrow.svg");
+        }
+      }
+      .header-title {
+      padding-top: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+      display: flex;
+        .count {
+          margin: 5px;
+            color: #001424;
+            font-size: 0.6em;
+            font-weight: 400;
+            text-align: center;
+            padding: 3px 5px;
+            background-color: #E2E5EB;
+            border-radius: 14px;
+        }
+      }
+    }
+  }
+  .app-content-base {
+    @include base-holder();
+    background-color: #F2F3F7;
+
+    .app-content {
+      @include base-content();
+      display:flex;
+      width: 100%;
+      .app-left-column {
+        background-color: white;
+        padding: 16px 16px;
+        margin: 24px 0px;
+        width: 232px;
+        min-width: 232px;
+        .app-nav{
+          font-size: 0.9em;
+          font-weight: 400;
+          div.title {
+            font-weight: bold;
+            color: #9198A0;
+          }
+          ul {
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding: 0px;
+            margin: 0px 0px 10px 0px;
+            li {
+              list-style-type: none;
+              color: #001424;
+
+              cursor: pointer;
+              input[type=checkbox] {
+                margin-right: 10px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .app-right-column {
+        margin: 24px 0px;
+        .column {
+          width: 435px;
+        }
+        .header {
+          background-color: white;
+          padding: 10px 10px;
+          margin-left: 24px;
+          border: 2px solid #BBC1C7;
+          border-radius: 4px;
+          .search {
+            width:100%;
+            padding-left: 50px;
+            background-image: url("../images/svg/search.svg");
+            background-position: left;
+            background-position-x: 10px;
+            background-repeat: no-repeat;
+            input[type=text]{
+              width: 80%;
+              border: 0px;
+              outline: none;
+            }
+          }
+        }
+
+        .content {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+
+          .item {
+            width: 435px;
+            margin: 24px 0px 0px 24px;
+            padding: 10px 10px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            .status {
+              width: fit-content;
+              border-radius: 14px;
+              padding: 3px 10px;
+              color: #FFFFFF;
+              font-size: 0.9em;
+              font-weight: 400;
+            }
+            .title {
+              padding: 10px 0px;
+              span {
+                padding-left: 5px;
+                font-weight: bold;
+              }
+            }
+            
+            .details {
+              display: flex;
+              flex-wrap: nowrap;
+              .details-item {
+                flex-grow: 1;
+                padding-right: 5px;
+                .details-title {
+                  color: #9198A0;
+                  font-size: 0.8em;
+                }
+                .details-value {
+                    color: #001424;
+                    font-size: 0.9em;
+                }
+              }
+            }
+
+            hr {
+              border-top: 1px solid #E2E5EB;
+            }
+
+            .info {
+              .left {
+                float: left;
+              }
+              .right {
+                float: right;
+              }
+              .info-title {
+                color: #9198A0;
+                font-size: 0.8em;
+              }
+              .info-date {
+                color: #001424;
+                font-size: 0.9em;
+            }
+            .info-name {
+                  color: #0077DB;
+                  font-size: 0.9em;
+              }
+            }
+
+          .green {
+              background-color: #26CD58;
+            }
+          .blue {
+              background-color: #0077DB;
+            }
+          }
+        }
+      }
+    }
+  }
+  }
