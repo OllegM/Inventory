@@ -20,9 +20,9 @@
       width: 100%;
       height: 120px;
       .breadcrumbs {
-      padding-top: 30px;
-      color: gray;
-      font-size: 0.7em;
+        padding-top: 30px;
+        color: gray;
+        font-size: 0.7em;
         ::after {
           content: "";
           position: relative;
@@ -33,30 +33,30 @@
         }
       }
       .header-title {
-      padding-top: 10px;
-      font-size: 1.5em;
-      font-weight: bold;
-      display: flex;
+        padding-top: 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+        display: flex;
         .count {
           margin: 5px;
-            color: #001424;
-            font-size: 0.6em;
-            font-weight: 400;
-            text-align: center;
-            padding: 3px 5px;
-            background-color: #E2E5EB;
-            border-radius: 14px;
+          color: #001424;
+          font-size: 0.6em;
+          font-weight: 400;
+          text-align: center;
+          padding: 3px 5px;
+          background-color: #e2e5eb;
+          border-radius: 14px;
         }
       }
     }
   }
   .app-content-base {
     @include base-holder();
-    background-color: #F2F3F7;
+    background-color: #f2f3f7;
 
     .app-content {
       @include base-content();
-      display:flex;
+      display: flex;
       width: 100%;
       .app-left-column {
         background-color: white;
@@ -64,12 +64,12 @@
         margin: 24px 0px;
         width: 232px;
         min-width: 232px;
-        .app-nav{
+        .app-nav {
           font-size: 0.9em;
           font-weight: 400;
           div.title {
             font-weight: bold;
-            color: #9198A0;
+            color: #9198a0;
           }
           ul {
             margin-inline-start: 0px;
@@ -81,7 +81,7 @@
               color: #001424;
 
               cursor: pointer;
-              input[type=checkbox] {
+              input[type="checkbox"] {
                 margin-right: 10px;
                 cursor: pointer;
               }
@@ -98,16 +98,16 @@
           background-color: white;
           padding: 10px 10px;
           margin-left: 24px;
-          border: 2px solid #BBC1C7;
+          border: 2px solid #bbc1c7;
           border-radius: 4px;
           .search {
-            width:100%;
+            width: 100%;
             padding-left: 50px;
             background-image: url("../images/svg/search.svg");
             background-position: left;
             background-position-x: 10px;
             background-repeat: no-repeat;
-            input[type=text]{
+            input[type="text"] {
               width: 80%;
               border: 0px;
               outline: none;
@@ -124,13 +124,13 @@
             width: 435px;
             margin: 24px 0px 0px 24px;
             padding: 10px 10px;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
             border-radius: 8px;
             .status {
               width: fit-content;
               border-radius: 14px;
               padding: 3px 10px;
-              color: #FFFFFF;
+              color: #ffffff;
               font-size: 0.9em;
               font-weight: 400;
             }
@@ -141,7 +141,7 @@
                 font-weight: bold;
               }
             }
-            
+
             .details {
               display: flex;
               flex-wrap: nowrap;
@@ -149,18 +149,18 @@
                 flex-grow: 1;
                 padding-right: 5px;
                 .details-title {
-                  color: #9198A0;
+                  color: #9198a0;
                   font-size: 0.8em;
                 }
                 .details-value {
-                    color: #001424;
-                    font-size: 0.9em;
+                  color: #001424;
+                  font-size: 0.9em;
                 }
               }
             }
 
             hr {
-              border-top: 1px solid #E2E5EB;
+              border-top: 1px solid #e2e5eb;
             }
 
             .info {
@@ -171,28 +171,31 @@
                 float: right;
               }
               .info-title {
-                color: #9198A0;
+                color: #9198a0;
                 font-size: 0.8em;
               }
               .info-date {
                 color: #001424;
                 font-size: 0.9em;
-            }
-            .info-name {
-                  color: #0077DB;
-                  font-size: 0.9em;
+              }
+              .info-name {
+                color: #0077db;
+                font-size: 0.9em;
               }
             }
 
-          .green {
-              background-color: #26CD58;
+            .green {
+              background-color: #26cd58;
             }
-          .blue {
-              background-color: #0077DB;
+            .blue {
+              background-color: #0077db;
+            }
+            .red {
+              background-color: red;
             }
           }
         }
       }
     }
   }
-  }
+}

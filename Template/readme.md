@@ -1,7 +1,9 @@
 # How to
 
+Build with Node 8. Node 10+ should work too.
+
 Start the template
-```
+```bash
 yarn
-gulp serve
+gulp
 ```
