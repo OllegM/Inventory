@@ -1,10 +1,17 @@
 ## Available Scripts
 
-In the project directory, you can run:
-
+## Запуск приложения из исходников
+Из папки app
 ```
 yarn
 yarn start
 ```
 
-`npm` should work too.
+`npm` также должен работать
+
+## Запуск собранного приложения
+Из папки app
+```
+yarn global add serve
+serve -s build
+```
