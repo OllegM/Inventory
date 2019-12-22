@@ -5,7 +5,7 @@ import CatalogController from '../../Controllers/CatalogController';
 const roles = [
   'Пользователь',
   'Владелец',
-  'Пользователь и владелец'
+  'Пользователь и Владелец'
 ]
 
 const types = [
@@ -34,6 +34,7 @@ class Navigation extends React.Component {
     } else {
       this.selectedRoles.delete(target.name);
     }
+    this.updateFilter();
   }
 
   toggleType = (event) => {

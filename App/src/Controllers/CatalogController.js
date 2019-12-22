@@ -41,9 +41,9 @@ class CatalogControler {
   getFilteredItems = () => {
       return this._items.filter((item) => {
         if (
-          (this._filter.role.size > 0 && this._filter.role.has(item.role)) ||
-          (this._filter.type.size > 0 && this._filter.type.has(item.type)) ||
-          (this._filter.searchString !== "" && item.title.toLowerCase().indexOf(this._filter.searchString.toLowerCase()) >= 0)
+          (this._filter.role.size === 0 || this._filter.role.has(item.role)) &&
+          (this._filter.type.size === 0 || this._filter.type.has(item.type)) &&
+          (this._filter.searchString === "" || item.title.toLowerCase().indexOf(this._filter.searchString.toLowerCase()) >= 0)
         ) {
           return item;
         } else {

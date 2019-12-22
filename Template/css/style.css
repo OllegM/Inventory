@@ -32,13 +32,13 @@
           font-weight: 400;
           text-align: center;
           padding: 3px 5px;
-          background-color: #E2E5EB;
+          background-color: #e2e5eb;
           border-radius: 14px; }
   .app .app-content-base {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #F2F3F7; }
+    background-color: #f2f3f7; }
     .app .app-content-base .app-content {
       max-width: 1224px;
       display: flex;
@@ -54,7 +54,7 @@
           font-weight: 400; }
           .app .app-content-base .app-content .app-left-column .app-nav div.title {
             font-weight: bold;
-            color: #9198A0; }
+            color: #9198a0; }
           .app .app-content-base .app-content .app-left-column .app-nav ul {
             margin-inline-start: 0px;
             margin-inline-end: 0px;
@@ -64,7 +64,7 @@
               list-style-type: none;
               color: #001424;
               cursor: pointer; }
-              .app .app-content-base .app-content .app-left-column .app-nav ul li input[type=checkbox] {
+              .app .app-content-base .app-content .app-left-column .app-nav ul li input[type="checkbox"] {
                 margin-right: 10px;
                 cursor: pointer; }
       .app .app-content-base .app-content .app-right-column {
@@ -75,7 +75,7 @@
           background-color: white;
           padding: 10px 10px;
           margin-left: 24px;
-          border: 2px solid #BBC1C7;
+          border: 2px solid #bbc1c7;
           border-radius: 4px; }
           .app .app-content-base .app-content .app-right-column .header .search {
             width: 100%;
@@ -84,7 +84,7 @@
             background-position: left;
             background-position-x: 10px;
             background-repeat: no-repeat; }
-            .app .app-content-base .app-content .app-right-column .header .search input[type=text] {
+            .app .app-content-base .app-content .app-right-column .header .search input[type="text"] {
               width: 80%;
               border: 0px;
               outline: none; }
@@ -96,13 +96,13 @@
             width: 435px;
             margin: 24px 0px 0px 24px;
             padding: 10px 10px;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
             border-radius: 8px; }
             .app .app-content-base .app-content .app-right-column .content .item .status {
               width: fit-content;
               border-radius: 14px;
               padding: 3px 10px;
-              color: #FFFFFF;
+              color: #ffffff;
               font-size: 0.9em;
               font-weight: 400; }
             .app .app-content-base .app-content .app-right-column .content .item .title {
@@ -117,27 +117,29 @@
                 flex-grow: 1;
                 padding-right: 5px; }
                 .app .app-content-base .app-content .app-right-column .content .item .details .details-item .details-title {
-                  color: #9198A0;
+                  color: #9198a0;
                   font-size: 0.8em; }
                 .app .app-content-base .app-content .app-right-column .content .item .details .details-item .details-value {
                   color: #001424;
                   font-size: 0.9em; }
             .app .app-content-base .app-content .app-right-column .content .item hr {
-              border-top: 1px solid #E2E5EB; }
+              border-top: 1px solid #e2e5eb; }
             .app .app-content-base .app-content .app-right-column .content .item .info .left {
               float: left; }
             .app .app-content-base .app-content .app-right-column .content .item .info .right {
               float: right; }
             .app .app-content-base .app-content .app-right-column .content .item .info .info-title {
-              color: #9198A0;
+              color: #9198a0;
               font-size: 0.8em; }
             .app .app-content-base .app-content .app-right-column .content .item .info .info-date {
               color: #001424;
               font-size: 0.9em; }
             .app .app-content-base .app-content .app-right-column .content .item .info .info-name {
-              color: #0077DB;
+              color: #0077db;
               font-size: 0.9em; }
             .app .app-content-base .app-content .app-right-column .content .item .green {
-              background-color: #26CD58; }
+              background-color: #26cd58; }
             .app .app-content-base .app-content .app-right-column .content .item .blue {
-              background-color: #0077DB; }
+              background-color: #0077db; }
+            .app .app-content-base .app-content .app-right-column .content .item .red {
+              background-color: red; }
